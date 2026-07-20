@@ -14,7 +14,7 @@ sources:
     tables: 
       - name: customers
         columns: 
-          - names: id
+          - name: id
             data_tests:
               - unique
               - not_null
