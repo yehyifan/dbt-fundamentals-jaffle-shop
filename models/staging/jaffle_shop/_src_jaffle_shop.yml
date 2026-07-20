@@ -2,6 +2,7 @@ sources:
   - name: jaffle_shop
     database: raw
     schema: jaffle_shop
+    description: A clone of a Postgres database
     # config:
     #   freshness:
     #     warn_after:
@@ -13,15 +14,19 @@ sources:
     #     loaded_at_field: loaded_at_field
     tables: 
       - name: customers
+        description: Raw customers data
         columns: 
           - name: id
+            description: Primary key
             data_tests:
               - unique
               - not_null
               
       - name: orders
+        description: Raw orders data
         columns:
           - name: id
+            description: Primary key
             data_tests:
               - unique
               - not_null
